@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript</title>
+    <script>
+        var str="This clears all string functions of strings ";
+        console.log(str);
+
+        //Print first occurence of a word
+        var firstocc=str.indexOf("string");
+        console.log(firstocc);  //output:16
+
+        //Print position of last occurance
+        var lastocc=str.lastIndexOf("string")
+        console.log(lastocc);  //output 36
+
+        //Substring of a string
+        console.log(str.slice(1,3));   //output hi
+        console.log(str.substring(1,3));   //output hi
+
+        //replace a word from the string
+        console.log(str.replace('all','every'));  //output : This clears every string functions of strings 
+
+        //change cases
+        console.log(str.toLowerCase());  //output: this clears all string functions of strings
+        console.log(str.toUpperCase());   //output : THIS CLEARS ALL STRING FUNCTIONS OF STRINGS
+
+        //To concatenate
+        var newStr=str.concat("... Concatenated");  
+        console.log(newStr);    // output : This clears all string functions of strings ... Concatenated
+
+        //Print letter at a specific position
+        console.log(str.charAt(3)); //output : s
+
+        const a="This is a constant content";
+        console.log(a);
+        let b=a;
+        console.log(b); //output: This is a constant content
+
+    </script>
+</head>
+
+<body>
+    <h2>Check console for the outputs</h2>
+
+</body>
+
+</html>
