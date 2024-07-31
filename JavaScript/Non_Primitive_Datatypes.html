@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Key Value Pair
+        
+        let employee={
+            Name :'Samriddhi Paul',
+            YoE: 2,
+            Salary: 1000,
+            Projects_done: 15,
+            "like coding": true,
+        }
+        console.log(employee); 
+        //output : {Name: 'Samriddhi Paul', YoE: 2, Salary: 1000, Projects_done: 15, like coding: true}
+        console.log(employee['Name']);
+        //output : Samriddhi Paul
+        console.log(employee["YoE"]);
+        //output : 2
+        console.log(employee.Salary);
+        //output : 1000
+        console.log(employee.Projects_done);
+        //output : 15
+        console.log(employee["like coding"]);
+        //output true
+
+
+        //ARRAYS  IMPORTANT
+        let emp=new Array(100,'Samriddhi Paul',undefined,null, 10000)
+        console.log(emp);
+        //output : (5) [100, 'Samriddhi Paul', undefined, null, 10000]
+        console.log(emp[2]);
+        //output: undefined
+        console.log(emp[3]);
+        //output : null
+        console.log(emp.sort());
+        //output : (5) [100, 10000, 'Samriddhi Paul', null, undefined]
+        emp.push("added");
+        console.log(emp);
+        //output : (6) [100, 10000, 'Samriddhi Paul', null, undefined, 'added']
+
+
+        //ANOTHER WAY TO CREATE ARRAYS
+        let emp1=[100,'Samriddhi Paul',undefined,null, 10000];
+        console.log(emp1);
+        //output  : (5) [100, 'Samriddhi Paul', undefined, null, 10000]
+
+    </script>
+</head>
+<body>
+    <H2>Non Primitive Datatypes</H2>
+    <h4>Check console for the output</h4>
+</body>
+</html>
