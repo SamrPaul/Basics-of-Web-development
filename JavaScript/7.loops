@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=["CN","DBMS","DSA","Maths","os"];
+        var element;
+
+
+        console.log("USING FOR LOOP");
+        for (let index = 0; index < arr.length; index++) {
+            element = arr[index];
+            console.log(element + "  ");
+        }
+        console.log("\n");
+        console.log("USING FOR-EACH LOOP");
+        arr.forEach(function f(element){
+            console.log(element + " ");
+        });
+
+
+        console.log("\n");
+        console.log("USING FOR-OF LOOP");
+        for (element of arr) {
+            console.log(element + " ");
+        }
+
+
+        console.log();
+        console.log("\nUSING FOR-IN LOOP");
+        let employee={
+            name: "Sam",
+            salary: 100,
+            relocate: true,
+        }
+
+
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+
+        console.log("\nUSING WHILE LOOP");
+        var i=0;
+        while(i<arr.length)
+        {
+            console.log(arr[i]);
+            i++;
+        }
+
+
+        console.log("\nUSING DO WHILE LOOP");
+        var j=0;
+        do
+        {
+            console.log(arr[j]);
+            j++;
+        }while(j<arr.length);
+
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+   
+</body>
+</html>
